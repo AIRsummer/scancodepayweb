@@ -7,9 +7,26 @@ class App extends Component {
   constructor (pros) {
     super(pros)
     this.state = {
-      var:"mike"
+        var:"mike",
+        count:1
     }
   }
+
+  command(){
+      this.setState({
+          count:this.state.count+1
+      });
+      if (this.state.count % 2) {
+          this.setState({
+              var: "mike"
+          });
+      } else {
+          this.setState({
+              var: "Summer"
+          })
+      }
+  }
+
   render() {
     return (
         <div className="App">
@@ -27,8 +44,9 @@ class App extends Component {
           {/*    Learn React*/}
           {/*  </a>*/}
           {/*</header>*/}
-          <a>hello</a>
+          <a>hello  </a>
           {this.state.var}
+            <button onClick={this.command = this.command.bind(this)}>changename</button>
           <Test></Test>
         </div>
     );
