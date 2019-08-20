@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.word_hello {
+  margin-left: 0px;
+  font-family: Arial;
+  color: sandybrown;
+}
+
+.name_button {
+  border: #61dafb;
+  margin-left: 10px;
+}

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Test from './test.js';
+import Input from './input.js';
+import Form from './jsx/form.js'
 
 class App extends Component {
   constructor (pros) {
@@ -30,24 +31,12 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          {/*<header className="App-header">*/}
-          {/*  <img src={logo} className="App-logo" alt="logo" />*/}
-          {/*  <p>*/}
-          {/*    Edit <code>src/App.js</code> and save to reload.*/}
-          {/*  </p>*/}
-          {/*  <a*/}
-          {/*    className="App-link"*/}
-          {/*    href="https://reactjs.org"*/}
-          {/*    target="_blank"*/}
-          {/*    rel="noopener noreferrer"*/}
-          {/*  >*/}
-          {/*    Learn React*/}
-          {/*  </a>*/}
-          {/*</header>*/}
-          <a>hello  </a>
-          {this.state.var}
-            <button onClick={this.command = this.command.bind(this)}>changename</button>
-          <Test></Test>
+          <h1 className={"word_hello"}>hello  {this.state.var} </h1>
+            <button className={"name_button"} onClick={this.command = this.command.bind(this)}>changename</button>
+            {/*<Input></Input>*/}
+
+            <Form></Form>
+
         </div>
     );
   }
